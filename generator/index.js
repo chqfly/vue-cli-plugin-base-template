@@ -7,17 +7,22 @@ module.exports = (api) => {
 
   api.extendPackage({
     scripts: {
-      "lint-staged": "lint-staged"
+      // "lint-staged": "lint-staged"
     },
     devDependencies: {
       "husky": "^4.2.5",
-      "lint-staged": "^9.5.0",
+      // "lint-staged": "^9.5.0",
       "@commitlint/cli": "^9.0.1",
       "@commitlint/config-conventional": "^9.0.1",
     },
+    devDependencies: {
+      "element-ui": "^2.13.2",
+      "axios": "^0.19.2",
+      "qs": "^6.9.4"
+    },
     husky: {
       "hooks": {
-        "pre-commit": "npm run lint-staged",
+        // "pre-commit": "npm run lint-staged",
         "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
       }
     },
