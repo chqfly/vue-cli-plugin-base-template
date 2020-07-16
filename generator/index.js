@@ -11,7 +11,7 @@ module.exports = (api) => {
     },
     devDependencies: {
       "husky": "^4.2.5",
-      "lint-staged": "^10.2.0",
+      "lint-staged": "^9.5.0",
       "@commitlint/cli": "^9.0.1",
       "@commitlint/config-conventional": "^9.0.1",
     },
