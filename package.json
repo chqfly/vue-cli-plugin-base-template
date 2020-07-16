@@ -1,0 +1,24 @@
+{
+  "name": "vue-cli-plugin-base-template",
+  "version": "1.0.0",
+  "description": "vue-cli plugin to quick generation of vue project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chqfly/vue-cli-plugin-base-template.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-base-template",
+    "vue-cli-plugin-base-template"
+  ],
+  "author": "chqfly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chqfly/vue-cli-plugin-base-template/issues"
+  },
+  "homepage": "https://github.com/chqfly/vue-cli-plugin-base-template#readme"
+}

@@ -1,0 +1,2 @@
+VUE_APP_MODE=qa
+VUE_APP_API_URL=/
