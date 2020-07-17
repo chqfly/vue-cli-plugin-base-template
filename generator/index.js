@@ -1,5 +1,6 @@
 module.exports = api => {
-  api.render("./template", {
+  api.render("./template");
+  api.render({
     "./src/main.js": "./template/src/main.js"
   });
 
