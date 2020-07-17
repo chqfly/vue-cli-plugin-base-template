@@ -4,9 +4,6 @@ module.exports = api => {
     "./src/main.js": "./template/src/main.js"
   });
 
-  api.injectImports(api.entryFile, `import "./extends/thirdLibs";`);
-  api.injectImports(api.entryFile, `import plugins from "./extends";`);
-
   api.extendPackage({
     devDependencies: {
       husky: "^4.2.5",
@@ -27,17 +24,4 @@ module.exports = api => {
       extends: ["@commitlint/config-conventional"]
     }
   });
-
-  // api.onCreateComplete(() => {
-  //   const { EOL } = require('os')
-  //   const fs = require('fs')
-  //   console.log('======')
-  //   const contentMain = fs.readFileSync(api.resolve(api.entryFile), { encoding: 'utf-8' })
-  //   const lines = contentMain.split(/\r?\n/g)
-
-  //   const renderIndex = lines.findIndex(line => line.match(/import plugins/))
-  //   lines[renderIndex] += `${EOL}Vue.use(plugins);`
-
-  //   fs.writeFileSync(api.entryFile, lines.join(EOL), { encoding: 'utf-8' })
-  // })
 };
