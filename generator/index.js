@@ -1,5 +1,7 @@
 module.exports = api => {
-  api.render("./template", {});
+  api.render("./template", {
+    "./src/main.js": "./template/src/main.js"
+  });
 
   api.injectImports(api.entryFile, `import "./extends/thirdLibs";`);
   api.injectImports(api.entryFile, `import plugins from "./extends";`);
